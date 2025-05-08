@@ -8,6 +8,8 @@ function ReVerifyCode({ id }) {
   // console.log(code);
   // const [visible, setVisible] = useState(false);
   const handleReverify = async () => {
+    console.log(hit);
+    
     const values = {
       id,
       // code,
