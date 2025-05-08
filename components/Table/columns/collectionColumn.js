@@ -49,6 +49,11 @@ export const collectionColumn = [
   //   minWidth: 200,
   // },
   {
+    Header: "GCode",
+    accessor: "gcode",
+    width: "auto",
+  },
+  {
     Header: "Code",
     accessor: "skipcode",
     width: "auto",

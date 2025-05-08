@@ -4,13 +4,13 @@ import { API_URL } from "../config/index";
 
 function ReVerifyCode({ id }) {
   console.log(id);
-  const [code, setCode] = useState("");
+  // const [code, setCode] = useState("");
   console.log(code);
-  const [visible, setVisible] = useState(false);
-  const handleCode = async () => {
+  // const [visible, setVisible] = useState(false);
+  const handleReverify = async () => {
     const values = {
       id,
-      code,
+      // code,
     };
     const url = `${API_URL}/reverify/code/page/post`;
 
@@ -26,7 +26,7 @@ function ReVerifyCode({ id }) {
     if (res.ok) {
       console.log("success", data);
       setVisible(false);
-      setCode("");
+      // setCode("");
     } else {
       console.log("error", data);
     }
@@ -34,12 +34,12 @@ function ReVerifyCode({ id }) {
   return (
     <>
       <button
-        onClick={() => setVisible(!visible)}
+        onClick={() => handleReverify()}
         className="bg-cyan-600 text-xs text-white font-semibold px-2 py-1 rounded"
       >
         ReVerifyCode
       </button>
-      {visible ? (
+      {/* {visible ? (
         <>
           <div class="fixed z-10 overflow-y-auto top-0 w-full left-0 ">
             <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
@@ -84,7 +84,7 @@ function ReVerifyCode({ id }) {
             </div>
           </div>
         </>
-      ) : null}
+      ) : null} */}
     </>
   );
 }
