@@ -37,7 +37,7 @@ function ReVerifyCode({ id }) {
         onClick={() => handleReverify()}
         className="bg-cyan-600 text-xs text-white font-semibold px-2 py-1 rounded"
       >
-        ReVerifyCode
+        AccVerify
       </button>
       {/* {visible ? (
         <>
