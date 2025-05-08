@@ -50,7 +50,7 @@ export const collectionColumn = [
   // },
   {
     Header: "GCode",
-    accessor: "gcode",
+    accessor: "gCode",
     width: "auto",
   },
   {
