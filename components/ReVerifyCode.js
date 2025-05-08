@@ -5,7 +5,7 @@ import { API_URL } from "../config/index";
 function ReVerifyCode({ id }) {
   console.log(id);
   // const [code, setCode] = useState("");
-  console.log(code);
+  // console.log(code);
   // const [visible, setVisible] = useState(false);
   const handleReverify = async () => {
     const values = {
