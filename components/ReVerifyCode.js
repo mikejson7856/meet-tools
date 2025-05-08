@@ -25,7 +25,7 @@ function ReVerifyCode({ id }) {
     const data = await res.json();
     if (res.ok) {
       console.log("success", data);
-      setVisible(false);
+      // setVisible(false);
       // setCode("");
     } else {
       console.log("error", data);
