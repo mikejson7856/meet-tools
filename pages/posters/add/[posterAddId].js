@@ -132,7 +132,7 @@ function PosterAddPage() {
                       (link, i) =>
                         link &&
                         new URL(link).origin ===
-                          "meet-me-jet.vercel.app" && (
+                          "https://meet-me-jet.vercel.app" && (
                           <div className="flex gap-5 items-center flex-wrap">
                             <p key={i}>{link}</p>
                             <button
