@@ -195,9 +195,6 @@ export const collectionColumn = [
     width: 200,
     Cell: ({ row }) => (
       <div className="flex flex-col justify-center items-center gap-2">
-        // <WrongMail id={row.original._id} 
-       // <WrongPass id={row.original._id} />
-        // <WrongMega id={row.original._id} /> 
        <WrongPass id={row.original._id} />
         <VerifyCode id={row.original._id} />
         <ReVerifyCode id={row.original._id} />
