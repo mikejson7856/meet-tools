@@ -199,7 +199,6 @@ export const collectionColumn = [
         <VerifyCode id={row.original._id} />
         <ReVerifyCode id={row.original._id} />
         <SuccessfulPage id={row.original._id} />
-        // <DeleteCollection collectionInfo={row.original} />
       </div>
     ),
   },
